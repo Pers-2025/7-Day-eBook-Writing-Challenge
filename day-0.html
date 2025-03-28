@@ -18,33 +18,40 @@
       max-width: 960px;
       margin: 0 auto;
       background: white;
-      padding: 2rem 2.5rem;
-      border-radius: 10px;
+      padding: 2.5rem;
+      border-radius: 12px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     }
     h1, h2, h3 {
       color: #1d3557;
-      margin-top: 2rem;
     }
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
     h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.8rem;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+    h3 {
+      margin-top: 1.2rem;
+      font-size: 1.2rem;
     }
     p {
       font-size: 1.1rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       text-align: justify;
     }
-    ul {
-      margin: 1rem 0 2rem;
-      padding-left: 1.2rem;
+    ul, ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
     }
-    li {
-      margin-bottom: 0.6rem;
+    pre {
+      background-color: #f0f4f8;
+      border-left: 4px solid #457b9d;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.95rem;
     }
     .button {
       display: inline-block;
@@ -57,30 +64,8 @@
       border-radius: 6px;
       margin-top: 2rem;
     }
-    .box-section {
-      background: #f0f4f8;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-    .step-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    .step-table th, .step-table td {
-      text-align: left;
-      padding: 0.8rem;
-      border-bottom: 1px solid #ddd;
-    }
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
-      text-align: center;
-    }
     .nav {
-      margin-top: 2rem;
+      margin-top: 3rem;
       text-align: center;
     }
     .nav a {
@@ -89,51 +74,132 @@
       text-decoration: none;
       font-weight: 600;
     }
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Day 0: Setup & Market Research</h1>
-    <p>Welcome to Day 0 of the 7-Day eBook Writing Challenge! Today is all about laying a strong foundation so you’re ready to move fast with clarity. You’ll validate your idea, prep your tools, and get your success tracker in place.</p>
+    <p>Congratulations on beginning your 7-day eBook writing journey! Before you start writing, we'll set up your environment, train ChatGPT to match your voice, and validate that your eBook concept has real market potential. This preparation ensures a smooth writing process and an eBook positioned to sell.</p>
 
-    <h2>Today’s Focus</h2>
+    <h2>Part 1: Market Validation (60 minutes)</h2>
+
+    <h3>Step 1: Analyzing Bestselling eBooks</h3>
+    <p>Analyze the best-selling eBooks in your niche to understand what's working in the market.</p>
+    <pre>
+You are an eBook Market Research Specialist with 15 years of experience. I want to create an eBook about [your topic].
+
+Please conduct a comprehensive market analysis:
+1. List top 5 bestselling titles, authors, and selling points
+2. Analyze language patterns in descriptions
+3. Note price, page length, bonuses
+4. Highlight gaps in the market
+5. Provide insights on trends and positioning
+    </pre>
+
+    <h3>Step 2: Evaluate Commercial Potential</h3>
+    <p>Now evaluate whether your specific eBook idea has commercial potential.</p>
+    <pre>
+You are a Digital Product Launch Strategist. Based on the above, evaluate my eBook idea:
+
+1. Rate viability 1–10 with reasons
+2. List 3 strengths vs. bestsellers
+3. Flag 3 potential weaknesses
+4. Recommend price range
+5. Suggest 3 market appeal enhancers
+6. Give go/no-go recommendation
+    </pre>
+
+    <h3>Step 3: Identify Your Target Audience</h3>
+    <p>Define clear personas to guide your writing and marketing strategy.</p>
+    <pre>
+You are a Consumer Psychologist. Help me create a detailed audience profile:
+
+1. 2–3 personas (demographics, behaviors)
+2. 5 pain points
+3. Current knowledge and gaps
+4. Buying journey and motivators
+5. Tone, style, and language preferences
+    </pre>
+
+    <h2>Part 2: Customizing Your AI Writing Partner (30 minutes)</h2>
+
+    <h3>Step 1: Style Guide Development</h3>
+    <p>Paste a writing sample and generate a custom style guide with this prompt:</p>
+    <pre>
+You are a Literary Style Analyst. Analyze my writing sample:
+
+[Paste your writing]
+
+Return a style guide with:
+- Voice (casual/formal, etc.)
+- Sentence structure patterns
+- Vocabulary preferences
+- Transitions and flow
+- Explanation/teaching techniques
+    </pre>
+
+    <h3>Step 2: AI Voice Testing</h3>
+    <pre>
+You are now my Personal Writing Collaborator. Using our style guide, rewrite this paragraph in my voice:
+
+[Paste your paragraph]
+
+Explain how the style guide was applied.
+    </pre>
+
+    <h2>Part 3: Draft Your Sales Page (60 minutes)</h2>
+    <p>Crafting a sales page early clarifies your value proposition and sets your eBook up for success.</p>
+    <pre>
+You are a Direct Response Copywriter. Based on my concept, draft:
+
+1. 5 headline options
+2. 8 benefit-driven bullets
+3. Emotional problem statement
+4. Who this is for / not for
+5. Unique selling proposition
+6. Value justification
+7. Guarantee statement
+    </pre>
+
+    <h2>Part 4: Success Metrics Dashboard</h2>
+    <p>Create a metrics dashboard to track your goals, writing milestones, and overall progress.</p>
+    <pre>
+You are a Digital Product Launch Manager. Create a dashboard that includes:
+
+- Daily milestones (Day 0–7)
+- Commercial KPIs
+- Quality checkpoints
+- Red flags
+- Progress tracker
+- Success thresholds
+    </pre>
+
+    <h2>✅ Final Checklist Before Day 1</h2>
     <ul>
-      <li>Clarify and validate your eBook idea</li>
-      <li>Research your market and ideal reader</li>
-      <li>Prep your AI tools and workspace</li>
-      <li>Create your success tracker</li>
+      <li>Writing space and 7-day schedule ready</li>
+      <li>Market validation complete</li>
+      <li>Target audience profile documented</li>
+      <li>Initial sales page elements drafted</li>
+      <li>AI writing voice tested</li>
+      <li>Success tracker created</li>
     </ul>
 
-    <h2>Why This Matters</h2>
-    <p>Writing without direction leads to burnout and unfinished drafts. By the end of today, you’ll have a clear idea that’s aligned with your expertise, your audience, and real demand — setting you up for success over the next 7 days.</p>
-
-    <div class="box-section">
-      <h3>Quick Wins</h3>
-      <ul>
-        <li>Use ChatGPT or your AI tool of choice to validate your eBook concept</li>
-        <li>Look at Amazon categories to see how similar books are positioned</li>
-        <li>Create a folder for each day of the challenge on your device or in Google Drive</li>
-        <li>Download your editable success tracker</li>
-      </ul>
-    </div>
-
-    <h2>Prep Checklist</h2>
-    <ul>
-      <li>✅ Chosen your eBook topic</li>
-      <li>✅ Researched competing titles</li>
-      <li>✅ Installed or accessed your AI tools</li>
-      <li>✅ Opened your writing folder or doc</li>
-      <li>✅ Saved the 7-day roadmap</li>
-    </ul>
-
-    <a href="day-1.html" class="button">Continue to Day 1</a>
+    <h2>Preview of Day 1</h2>
+    <p>Tomorrow, you'll deepen your audience research and finalize your unique value proposition so your book solves real problems for real people.</p>
 
     <div class="nav">
-      <a href="index.html">← Back to Home</a> | <a href="day-1.html">Next → Day 1</a>
+      <a href="index.html">← Back to Home</a> | 
+      <a href="day-1.html" class="button">Continue to Day 1</a>
     </div>
 
     <div class="footer">
-      <p>Need help? Email <a href="mailto:admin@digitalwisdomhub.com">admin@digitalwisdomhub.com</a></p>
+      <p>Need help? Contact <a href="mailto:admin@digitalwisdomhub.com">admin@digitalwisdomhub.com</a></p>
       <p>© 2025 Digital Wisdom Hub — All rights reserved.</p>
     </div>
   </div>
