@@ -1,7 +1,5 @@
-# 7-Day-eBook-Writing-Challenge
-Write, design, and publish a powerful eBook in just 7 days using AI — no prior experience required.
 # ✍️ Welcome to the 7-Day eBook Writing Challenge  
-**You’ve unlocked your step-by-step writing system — let's turn your ideas into a powerful eBook.**  
+**You’ve unlocked your step-by-step writing system — let's turn your ideas into a powerful eBook,in just 7 days using AI — no prior experience required.
 _Brought to you by [Digital Wisdom Hub](https://www.digitalwisdomhub.com)_
 
 ---
