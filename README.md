@@ -1,6 +1,6 @@
 # 7-Day eBook Writing Challenge
 
-**Turn your ideas into an eBook using AI — one step at a time. No Prior Experience Required.
+Turn your ideas into an eBook using AI — one step at a time. No Prior Experience Required.
 
 Brought to you by [Digital Wisdom Hub](https://www.digitalwisdomhub.com)
 
