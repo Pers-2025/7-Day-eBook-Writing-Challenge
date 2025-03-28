@@ -4,94 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>7-Day eBook Writing Challenge</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
   <style>
+    :root {
+      --primary: #457b9d;
+      --secondary: #1d3557;
+      --text-color: #000;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
+      color: var(--text-color);
       margin: 0;
       padding: 0;
-      background-color: #f0f4f8;
-      color: #000; /* Black text */
+      line-height: 1.7;
     }
 
     .container {
       max-width: 960px;
       margin: 0 auto;
-      padding: 3rem 2rem;
-      background: white;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2, h3 {
+      color: var(--secondary);
     }
 
     h1 {
       font-size: 3rem;
       font-weight: 900;
-      color: #000;
+      margin-bottom: 1.5rem;
       text-align: center;
-      margin-bottom: 2rem;
     }
 
-    h2 {
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
       font-size: 2rem;
       font-weight: 700;
-      margin-top: 3rem;
-      color: #000;
+      margin-bottom: 1rem;
     }
 
-    h3 {
+    .section h3 {
       font-size: 1.4rem;
-      font-weight: 600;
-      margin-top: 2rem;
-      color: #000;
+      margin-bottom: 0.5rem;
     }
 
-    p {
+    .section p, li {
       font-size: 1.1rem;
-      line-height: 1.8;
-      color: #000;
-      margin-bottom: 1.2rem;
     }
 
-    ul {
-      padding-left: 1.2rem;
-      margin-bottom: 2rem;
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: 1px solid #e0e0e0;
     }
 
-    li {
-      margin-bottom: 0.6rem;
+    .card h3 {
+      margin-top: 0;
     }
 
-    .box-section {
-      background: #f7f9fb;
-      padding: 1.5rem 1.5rem;
-      border-radius: 10px;
-      margin: 2rem 0;
-      border: 1px solid #eaeaea;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .grid .card {
+      flex: 1;
+      min-width: 280px;
     }
 
     .button {
       display: inline-block;
-      background-color: #457b9d;
+      background: var(--primary);
       color: white;
       padding: 1rem 2rem;
-      border-radius: 8px;
       font-size: 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: bold;
       margin-top: 2rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
     }
 
-    .button:hover {
-      background-color: #3d6d8c;
-      transform: translateY(-2px);
+    .faq dt {
+      font-weight: 600;
+      margin-top: 1rem;
     }
 
-    .footer {
+    .faq dd {
+      margin-bottom: 1rem;
+    }
+
+    .pledge-box {
+      background: #ffffff;
+      border-left: 4px solid var(--primary);
+      padding: 1.5rem;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    footer {
       text-align: center;
-      font-size: 0.9rem;
-      color: #000;
       margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
     }
 
     @media (max-width: 768px) {
@@ -99,68 +122,103 @@
         font-size: 2.4rem;
       }
 
-      h2 {
-        font-size: 1.6rem;
-      }
-
-      .container {
-        padding: 2rem 1rem;
+      .grid {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-
   <div class="container">
     <h1>7-Day eBook Writing Challenge</h1>
-    <p>Turn your expertise into a published book — fast. This challenge is designed to help educators, coaches, and professionals complete a high-quality eBook using AI-powered prompts, clear systems, and daily accountability.</p>
 
-    <h2>What You'll Get</h2>
-    <ul>
-      <li>7-Day step-by-step writing roadmap</li>
-      <li>Market-tested prompt templates</li>
-      <li>Audience analysis and title generation tools</li>
-      <li>Formatting and publishing guidance</li>
-      <li>Optional upgrade: 1:1 feedback and publishing support</li>
-    </ul>
+    <section class="section">
+      <p>This challenge is for professionals, educators, and creators who are ready to write a valuable eBook using AI — without losing your voice or getting overwhelmed. Over 7 days, you’ll go from idea to publish-ready draft with simple steps and the right tools.</p>
+    </section>
 
-    <h2>Who This Challenge is For</h2>
-    <ul>
-      <li>Educators, coaches, consultants, and creators</li>
-      <li>First-time authors who want structure and support</li>
-      <li>Professionals ready to create a lead magnet, guide, or paid product</li>
-    </ul>
+    <section class="section">
+      <h2>Here’s What You’ll Get</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Daily Roadmap</h3>
+          <p>Each day builds on the last so you always know what to do next. No guesswork.</p>
+        </div>
+        <div class="card">
+          <h3>AI Prompt Packs</h3>
+          <p>Use guided prompts that keep your tone human, your ideas clear, and your draft moving.</p>
+        </div>
+        <div class="card">
+          <h3>Structure & Support</h3>
+          <p>You'll follow a proven framework with the option to reach out if you need help.</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Who It’s Not For</h2>
-    <ul>
-      <li>Anyone looking for a ghostwriter or done-for-you service</li>
-      <li>People unwilling to set aside 60–90 minutes per day for 7 days</li>
-      <li>Those expecting AI to do 100% of the work without direction</li>
-    </ul>
+    <section class="section">
+      <h2>What You’ll Walk Away With</h2>
+      <ul>
+        <li>A complete eBook draft ready for formatting and publishing</li>
+        <li>A repeatable system you can use again and again</li>
+        <li>Confidence in using AI as a creative tool, not a shortcut</li>
+        <li>A topic aligned with your expertise and your audience’s needs</li>
+      </ul>
+    </section>
 
-    <h2>What You’ll Gain</h2>
-    <ul>
-      <li><strong>Clarity:</strong> Know exactly what to write and how to position it</li>
-      <li><strong>Momentum:</strong> Complete your eBook step by step without overwhelm</li>
-      <li><strong>Confidence:</strong> Know your content meets reader needs and sells your value</li>
-      <li><strong>Speed:</strong> Finish in days, not months — without sacrificing quality</li>
-    </ul>
+    <section class="section">
+      <h2>Is This Challenge Right for You?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>This is for you if:</h3>
+          <ul>
+            <li>You have a story, solution, or message to share</li>
+            <li>You want to write a useful, well-structured eBook quickly</li>
+            <li>You prefer guidance over guessing</li>
+            <li>You’re ready to commit 1–2 hours per day for 7 days</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>This may not be for you if:</h3>
+          <ul>
+            <li>You want AI to do all the writing for you</li>
+            <li>You’re looking for a done-for-you ghostwriting service</li>
+            <li>You’re not ready to start or finish a writing project</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <h2>My Pledge to You</h2>
-    <div class="box-section">
-      <p>This challenge isn’t about churning out another generic book. It’s about creating something truly valuable — fast — using a system designed for professionals like you. I pledge to provide clear, step-by-step guidance, honest support, and practical tools that respect your voice and goals.</p>
-      <p>If you ever feel stuck, overwhelmed, or off-track — reach out. I’ll help you get back on course so you finish proud and confident in what you’ve created.</p>
-    </div>
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+      <dl class="faq">
+        <dt>What tools do I need?</dt>
+        <dd>Just ChatGPT (free or Plus), a Google Doc, and a way to save your notes.</dd>
 
-    <h2>Ready to Begin?</h2>
-    <p>Since you’re already signed up, you can start the challenge now.</p>
-    <a href="day-0.html" class="button">Start Day 0</a>
+        <dt>What if I miss a day?</dt>
+        <dd>You can work at your own pace. All steps are accessible anytime.</dd>
 
-    <div class="footer">
+        <dt>I’ve never used AI — is that okay?</dt>
+        <dd>Yes. You’ll get simple, ethical, beginner-friendly prompts. No tech stress.</dd>
+
+        <dt>Do I need to have a book idea already?</dt>
+        <dd>No. We’ll help you choose the right idea on Day 0 based on your goals.</dd>
+      </dl>
+    </section>
+
+    <section class="section">
+      <h2>My Pledge to You</h2>
+      <div class="pledge-box">
+        I created this challenge to help you finish something meaningful. You'll get clear instructions, practical tools, and support along the way. If you get stuck or overwhelmed, you can reach out anytime. I'll help you stay focused and moving forward. The goal is to help you finish confidently and be proud of what you've created.
+      </div>
+    </section>
+
+    <section class="section" style="text-align: center;">
+      <a href="day-0.html" class="button">Start the Challenge</a>
+    </section>
+
+    <footer>
       <p>Need help? Email <a href="mailto:admin@digitalwisdomhub.com">admin@digitalwisdomhub.com</a></p>
       <p>© 2025 Digital Wisdom Hub — All rights reserved.</p>
-    </div>
+    </footer>
   </div>
-
 </body>
 </html>
