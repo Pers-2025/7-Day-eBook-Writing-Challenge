@@ -3,42 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Day 0: Setup & Market Research | 7-Day eBook Challenge</title>
+  <title>Day 0: Setup & Market Research</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #e2e6ea;
-      color: #2c3e50;
       margin: 0;
       padding: 2rem 1rem;
+      color: #000;
     }
 
     .container {
       max-width: 900px;
-      background: white;
-      padding: 2.5rem;
       margin: auto;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
     }
 
     h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 1.8rem;
       color: #1d3557;
+      margin-bottom: 1rem;
     }
 
     h2 {
-      font-size: 1.4rem;
-      color: #1d3557;
+      font-size: 1.3rem;
+      color: #457b9d;
       margin-top: 2rem;
     }
 
-    p, li {
+    p {
       font-size: 1.1rem;
       line-height: 1.6;
-      text-align: justify;
+      margin-bottom: 1.2rem;
     }
 
     textarea {
@@ -47,21 +45,19 @@
       padding: 1rem;
       font-size: 1rem;
       border: 1px solid #ccc;
-      border-radius: 8px;
-      resize: vertical;
-      margin-bottom: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .button {
       background-color: #457b9d;
       color: white;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      font-weight: 600;
+      padding: 0.8rem 1.2rem;
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      margin-right: 1rem;
+      font-weight: 600;
     }
 
     .button:hover {
@@ -72,65 +68,25 @@
       margin-top: 2rem;
       text-align: right;
     }
-
-    .prompt {
-      background-color: #f2f3f5;
-      padding: 1rem;
-      border-left: 4px solid #457b9d;
-      font-family: monospace;
-      white-space: pre-wrap;
-      margin-bottom: 1.5rem;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Day 0: Setup and Market Research</h1>
-    <p><strong>Successful eBooks don’t just inform — they sell results and transformation.</strong></p>
-    <p>Today, you’ll lay the groundwork: validate your idea, understand your readers, align with market demand, and prepare your writing space.</p>
+    <h1>Day 0: Setup & Market Research</h1>
+    <p>Before writing your eBook, let’s make sure your idea is profitable. Research your niche, define your audience, and test ChatGPT as your writing partner.</p>
 
-    <h2>🔍 Part 1: Market Validation</h2>
-    <p><strong>Step 1: Analyze Bestselling eBooks</strong></p>
-    <div class="prompt">
-You are an eBook Market Research Specialist with 15 years of experience in digital publishing... [Insert full prompt from document here]
-    </div>
+    <h2>📘 Task: Analyze the Market</h2>
+    <p>Use this prompt in ChatGPT:</p>
+    <p><em>You are an eBook Market Strategist. Help me identify bestselling books in [your topic], their unique angles, and price points.</em></p>
 
-    <p><strong>Step 2: Evaluate Commercial Potential</strong></p>
-    <div class="prompt">
-You are a Digital Product Launch Strategist... [Insert evaluation prompt here]
-    </div>
+    <h2>🧠 Reflection</h2>
+    <p>What niche are you targeting? What gaps exist in the market? Record below:</p>
+    <textarea id="reflectionInput" placeholder="Type your notes here..."></textarea>
 
-    <p><strong>Step 3: Identify Your Target Audience</strong></p>
-    <div class="prompt">
-You are a Consumer Psychologist... [Insert full audience prompt here]
-    </div>
-
-    <h2>🛠 Part 2: Customize Your AI Writing Partner</h2>
-    <p>Train ChatGPT to understand your writing voice using a style guide and testing prompt.</p>
-    <div class="prompt">
-You are a Literary Style Analyst... [Insert prompt to analyze style]
-    </div>
-
-    <h2>💰 Part 3: Start Your Sales Page</h2>
-    <p>Create your initial draft to clarify your value proposition and hook.</p>
-    <div class="prompt">
-You are a Direct Response Copywriter... [Insert sales page prompt]
-    </div>
-
-    <h2>📊 Part 4: Success Metrics Dashboard</h2>
-    <p>Build your dashboard to track quality, deadlines, and red flags.</p>
-    <div class="prompt">
-You are now a Digital Product Launch Manager... [Insert dashboard prompt]
-    </div>
-
-    <h2>📝 Reflection Activity</h2>
-    <p><strong>What was your biggest insight from today’s research? What problem are you really solving with your eBook?</strong></p>
-    <textarea id="reflectionInput" placeholder="Type your answer here..."></textarea>
-
-    <button class="button" onclick="downloadResponse()">Download My Response</button>
+    <button class="button" onclick="downloadResponse()">Download My Notes</button>
 
     <div class="nav-buttons">
-      <a href="day-1.html" class="button">Start Day 1 →</a>
+      <a href="day-1.html" class="button">Next →</a>
     </div>
   </div>
 
@@ -140,7 +96,7 @@ You are now a Digital Product Launch Manager... [Insert dashboard prompt]
       const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = "day-0-reflection.txt";
+      link.download = "day-0-notes.txt";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
