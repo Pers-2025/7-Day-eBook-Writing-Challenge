@@ -36,18 +36,16 @@ This challenge is designed for:
 
 ---
 
-## Access the Challenge
+## Access the Challenge 
 
-| Day | Topic                                | Link                     |
-|-----|--------------------------------------|--------------------------|
-| 1   | Brainstorm & Book Idea               | [Go to Day 1](day-1.md)  |
-| 2   | Structure & Outline                  | [Go to Day 2](day-2.md)  |
-| 3   | Draft Chapter 1                      | [Go to Day 3](day-3.md)  |
-| 4   | Write the Core                       | [Go to Day 4](day-4.md)  |
-| 5   | Final Sections                       | [Go to Day 5](day-5.md)  |
-| 6   | Design & Format                      | [Go to Day 6](day-6.md)  |
-| 7   | Publish & Launch                     | [Go to Day 7](day-7.md)  |
-
+- [Day 0: Set Up, Research & Prepare](day-0-setup-market-research.md)  
+- [Day 1: Define Your Audience & Unique Value](day-1-audience-uvp.md)  
+- [Day 2: Choose a Niche That Sells](day-2-niche.md)  
+- [Day 3: Create a Sales-Driven Title & Outline](day-3-title-outline.md)  
+- [Day 4: Write a Powerful First Draft](day-4-first-draft.md)  
+- [Day 5: Humanize Your eBook for Impact](day-5-humanize.md)  
+- [Day 6: Format & Position Your eBook](day-6-formatting-sales.md)  
+- [Day 7: Publish, Promote & Profit](day-7-publish-launch.md)  
 ---
 
 ## Need Help?
