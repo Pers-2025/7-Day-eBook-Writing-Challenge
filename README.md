@@ -55,4 +55,10 @@ This challenge is designed for:
 
 ---
 
+## 🚀 Ready to Begin?
+
+<a href="day-0-setup-market-research.md" style="background-color:#457b9d;color:white;padding:0.8rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:bold;">Start the Challenge</a>
+
+---
+
 © 2025 Digital Wisdom Hub — All rights reserved.
