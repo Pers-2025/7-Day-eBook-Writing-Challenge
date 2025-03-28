@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 1 – Define Your Audience & UVP | 7-Day eBook Challenge</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fb;
+      color: #2c3e50;
+      margin: 0;
+      padding: 2rem 1rem;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 {
+      color: #1d3557;
+      margin-top: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+    ul {
+      margin: 1rem 0 2rem;
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
+    }
+    textarea {
+      width: 100%;
+      height: 160px;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      margin-bottom: 1.5rem;
+    }
+    .button {
+      display: inline-block;
+      background-color: #457b9d;
+      color: white;
+      padding: 0.8rem 1.4rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    .button:hover {
+      background-color: #365a7d;
+    }
+    .nav {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .nav a {
+      margin: 0 1rem;
+      color: #457b9d;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Day 1: Define Your Audience & Unique Value Proposition</h1>
+    <p>Welcome to Day 1 of your eBook creation journey. Today we dig deep into understanding your readers and crafting a Unique Value Proposition (UVP) that makes your book stand out and sell.</p>
+
+    <h2>Part 1: Identify Your Target Audience</h2>
+    <p>Your goal is not to write for “everyone.” General books don’t sell. Today, you’ll narrow your focus to the one audience who needs — and will pay for — your solution.</p>
+    <p><strong>Write down 2–3 audience groups who might benefit from your eBook:</strong></p>
+    <textarea placeholder="E.g. New coaches, solopreneurs, educators..."></textarea>
+
+    <p><strong>Now use the ChatGPT audience scoring prompt and paste your results or observations here:</strong></p>
+    <textarea placeholder="Which group has biggest need, budget, urgency? Paste GPT response or reflect..."></textarea>
+
+    <h2>Part 2: Buyer Persona</h2>
+    <p>Now that you’ve chosen your audience, it’s time to understand them deeply — who they are, what they struggle with, and how your book can help.</p>
+    <p><strong>Draft your primary persona’s profile:</strong></p>
+    <textarea placeholder="Who are they? What do they want? Where are they stuck? What motivates them?"></textarea>
+
+    <h2>Part 3: The Monday Morning Problem</h2>
+    <p>This is the moment of maximum stress. Imagine your reader at the start of their week facing the exact problem your eBook solves.</p>
+    <textarea placeholder="Write a vivid Monday scenario: What's broken? What are they googling? What’s failing?"></textarea>
+
+    <h2>Part 4: The Friday Afternoon Transformation</h2>
+    <p>Now describe what success looks like by the end of the week. What results can your reader realistically achieve after following your eBook?</p>
+    <textarea placeholder="What do they now understand, accomplish, or feel? Be specific..."></textarea>
+
+    <h2>Part 5: Your Unique Value Proposition (UVP)</h2>
+    <p>Use this formula to draft your UVP:</p>
+    <p><em>I help [target audience] achieve [result] through [approach] in [timeframe] without [frustration].</em></p>
+    <textarea placeholder="Example: I help freelance educators publish their first lead magnet in 7 days using AI without sounding robotic."></textarea>
+
+    <button class="button" onclick="downloadResponses()">📥 Download My Day 1 Responses</button>
+
+    <div class="nav">
+      <a href="index.html">← Back to Home</a> |
+      <a href="day-2.html">Next → Day 2</a>
+    </div>
+
+    <div class="footer">
+      <p>Need help? Email <a href="mailto:admin@digitalwisdomhub.com">admin@digitalwisdomhub.com</a></p>
+      <p>© 2025 Digital Wisdom Hub — All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    function downloadResponses() {
+      const textareas = document.querySelectorAll('textarea');
+      let content = '';
+      textareas.forEach((area, i) => {
+        content += `Section ${i + 1}:\n` + area.value + '\n\n';
+      });
+      const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'day-1-responses.txt';
+      link.click();
+    }
+  </script>
+</body>
+</html>
