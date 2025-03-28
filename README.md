@@ -1,2 +1,2 @@
 # 7-Day-eBook-Writing-Challenge
-7-Day eBook Writing Challenge — Write, Design &amp; Publish your eBook Using AI in Just One Week. 
+Write, design, and publish a powerful eBook in just 7 days using AI — no prior experience required.
